@@ -1,0 +1,22 @@
+{
+  "name": "eleventy-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --watch",
+    "build": "eleventy"
+  },
+  "styles": { 
+    "css/index.css"
+  },
+  "keywords": [],
+  "author": "Cynthia Lu",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4"
+  }
+}
