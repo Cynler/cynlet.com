@@ -21,7 +21,6 @@ body {
 section {
   display: -webkit-flex;
   display: flex;
-  flex-direction: column;
 }
 /* top banner values */
 header.top {
@@ -73,11 +72,28 @@ div.homepage>div{
 .homepage h1:nth-last-child(2) { color: var(--beige); }
 .homepage h1:nth-last-child(1) { color: var(--flamingo); }
 
-@media and screen (min-width: 360){
+@media (max-width: 700px){
   header.top {
-    font-size-adjust: none;
-    font-optical-sizing: auto;
+    flex-direction: column;
+  }
 
+  .homepage {
+    padding: 0;
+    flex-direction: column;
+  }
+  
+  div.homepage>div {
+    align-self: end;
+    width: 100vw;
+    padding-right: 0;
+  }
+
+  img[src*="img/Sunfish.svg"] {
+    width: 100vw;
+    align-self: top;
+    top: 0px;
+    padding-left: 0;
+    padding: 10px;
   }
 }
 
