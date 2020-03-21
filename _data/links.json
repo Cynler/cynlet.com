@@ -1,0 +1,24 @@
+{
+  "home": "/",
+  "about": "/about.html",
+  "blog": "/blog.html",
+  "work": "/work.html",
+  "navLinks": [
+    {
+      "title": "Home",
+      "slug": "/"
+    },
+    {
+      "title": "About",
+      "slug": "/about.html"
+    },
+    {
+      "title": "Blog",
+      "slug": "/blog.html"
+    },
+    {
+      "title": "Work",
+      "slug": "/work.html"
+    }
+  ]
+}

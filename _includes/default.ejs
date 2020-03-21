@@ -15,10 +15,9 @@ title:
   <div class="main">
     <header class="top">
       <img src="/img/FishLogo.svg" alt="CynLu Logo"></img>
-      <a href="/">Home</a>
-      <a href="/Blog">Blog</a>
-      <a href="/Work">Work</a>
-      <a href="/About">About</a>
+      <% links.navLinks.forEach(link => { %>
+        <a href="<%= link.slug %>"><%= link.title %></a>
+      <% }) %>
     </header>
     
     <section>
