@@ -72,6 +72,8 @@ div.homepage>div{
 .homepage h1:nth-last-child(2) { color: var(--beige); }
 .homepage h1:nth-last-child(1) { color: var(--flamingo); }
 
+/*About Page*/
+
 @media (max-width: 700px){
   header.top {
     flex-direction: column;
