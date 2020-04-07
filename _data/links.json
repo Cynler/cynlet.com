@@ -1,8 +1,8 @@
 {
   "home": "/",
-  "about": "/about.html",
-  "blog": "/blog.html",
-  "work": "/work.html",
+  "about": "/About",
+  "blog": "/Blog",
+  "work": "/Work",
   "navLinks": [
     {
       "title": "Home",
