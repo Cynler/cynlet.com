@@ -62,22 +62,23 @@ img[src*="img/Sunfish.svg"] {
   scroll-behavior: auto;
   align-self: : left;
   position: relative;
-  top: 21px;
+  top: 20px;
 }
 div.homepage>div{
   align-self: right;
-  text-align: center;
+  text-align: left;
   font-size: 45px;
   font-optical-sizing: auto;
   width: 60vw;
-  padding-right: 10vw;
-  
 }
 .homepage h1:nth-last-child(3) { color: var(--darkcyan);}
 .homepage h1:nth-last-child(2) { color: var(--beige); }
 .homepage h1:nth-last-child(1) { color: var(--flamingo); }
 
 /*About Page*/
+section.aboutPage {
+  display: grid;
+}
 
 @media (max-width: 700px){
   header.top {
@@ -91,6 +92,7 @@ div.homepage>div{
   
   div.homepage>div {
     align-self: end;
+    text-align: center;
     width: 100vw;
     padding-right: 0;
   }
