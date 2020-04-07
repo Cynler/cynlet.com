@@ -45,6 +45,11 @@ header>a {
   padding-right: 5vw;
   font-size: 25px; 
 }
+
+.site-nav {
+
+}
+
 /* homepage main body values */
 .homepage { 
   display: inline-flex;
