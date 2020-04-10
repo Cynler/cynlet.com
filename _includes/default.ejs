@@ -15,8 +15,13 @@ title:
   <div class="main">
     <header class="top">
       <img src="/img/FishLogo.svg" alt="CynLu Logo"></img>
+      <! >
       <% links.navLinks.forEach(link => { %>
-        <a class="site-nav" href="<%= link.slug %>"><%= link.title %></a>
+          <% if (link.slug == page.url) { %>
+            <a class="site-nav active" href="<%= link.slug %>"><%= link.title%></a>
+          <% } else { %>
+            <a class="site-nav" href="<%= link.slug%>"><%= link.title %></a> 
+          <% } %>
       <% }) %>
     </header>
     

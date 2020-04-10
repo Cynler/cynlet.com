@@ -42,12 +42,19 @@ img[src*="img/FishLogo.svg"] {
 header>a {
   text-decoration: none;
   color: inherit;
-  padding-right: 5vw;
   font-size: 25px; 
+  font-weight: bold;
+  margin-right: 5vw;
 }
 
-.site-nav {
+.site-nav.active{
+  text-decoration-line: underline;
+}
 
+.site-nav:hover {
+  background-color: var(--beige);
+  font-style:  italic;
+  text-decoration-line: underline;
 }
 
 /* homepage main body values */

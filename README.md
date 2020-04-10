@@ -3,18 +3,15 @@
 ## Currently, only the web version is available, more TODO for mobile.
 
 ### This is a webpage planned to consist of 4 pages, home, work, blog, about.
-- Currently only **Home** is done
+- Currently **Home** and **About** is done
 - The generally banner layout is complete as well.
 
 ## TODO Shorterm
-- **(!!!) Mobile version of Home**
-  1. Image resizing became too small when in a small screen
-  2. Text displacement (Horonzontal view -> Vertical)
-- Find a way to make Home page text bulkier like original visioned.
-## TODO Longterm
+- **Banner** Highlight when on certain page
 - **(!!)About page**
-  1. Fish facts + Introduciton
+  1. Fish facts + Introduciton (Done)
   2. links to github/insta/linkdn/resume pdf.
+## TODO Longterm
 - **(!)Work page**
   1. Card view for all of my vector/poster work. (or listview)
   2. upload all my artwork
