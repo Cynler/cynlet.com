@@ -18,13 +18,10 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-section {
-  display: -webkit-flex;
-  display: flex;
-}
+
 /* top banner values */
 header.top {
-  display: inline-block;
+  display: inline-flex;
   background-color: var(--brown);
   color: var(--liorange);
   padding: 15px;
@@ -37,80 +34,91 @@ img[src*="img/FishLogo.svg"] {
   height: 30px;
   padding-left: 1vw;
   padding-right: 2vw;
-  vertical-align: text-bottom;
 }
-header>a {
+header.top>a {
   text-decoration: none;
   color: inherit;
   font-size: 25px; 
   font-weight: bold;
   margin-right: 5vw;
 }
-
 .site-nav.active{
   text-decoration-line: underline;
 }
-
 .site-nav:hover {
   background-color: var(--beige);
   font-style:  italic;
   text-decoration-line: underline;
 }
 
-/* homepage main body values */
+/* Home page */
 #home { 
-  display: inline-flex;
-  padding: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10vw;
 }
-#home img[src*="img/Sunfish.svg"] {
-  width:40vw;
-  padding-left: 10vw; 
-  height: 350px;
-  scroll-behavior: auto;
-  align-self: : left;
-  position: relative;
-  top: 20px;
+#home .img {
+flex-basis: 50%;
+padding-right: 25px;
+align-self: center;
 }
-#home div.homepage>div{
-  align-self: right;
-  text-align: left;
+#home .img>img[src*="img/Sunfish.svg"] {
+  height: 400px;
+  float: right;
+}
+#home .container{
   font-size: 45px;
+  font-weight: bolder;
   font-optical-sizing: auto;
-  width: 60vw;
+  align-self: center;
+  flex-basis: 50%;
+  line-height: 2;
 }
-.homepage h1:nth-last-child(3) { color: var(--darkcyan);}
-.homepage h1:nth-last-child(2) { color: var(--beige); }
-.homepage h1:nth-last-child(1) { color: var(--flamingo); }
+#home h1:nth-last-child(3) { color: var(--darkcyan);}
+#home h1:nth-last-child(2) { color: var(--beige); }
+#home h1:nth-last-child(1) { color: var(--flamingo); }
 
 /*About Page*/
 #about {
   display: grid;
 }
 
-/* mobile page change */
+/*** Mobile page change ***/
 @media (max-width: 700px){
   header.top {
-    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  header.top img[src*="img/FishLogo.svg"] {
+    flex-basis: 100%;
+    align-self: center;
+  }
+  header.top>a {
+    flex-grow: 4;
+    padding-right: 1vw;
+    margin-right: unset;
   }
 
-  .homepage {
+  /**Home Page Mobile specifics**/
+  #home {
     padding: 0;
     flex-direction: column;
   }
-  
-  div.homepage>div {
-    align-self: end;
+  #home .img {
+    flex-basis: 50%;
+    align-self: center
+  }
+  #home .img>img[src*="img/Sunfish.svg"] {
+    height: auto;
+  }
+  #home .container{
     text-align: center;
-    width: 100vw;
-    padding-right: 0;
+    line-height: 1;
+
+    align-self: center;
+    padding-top: 10px;
   }
 
-  img[src*="img/Sunfish.svg"] {
-    width: 100vw;
-    align-self: top;
-    top: 0px;
-    padding-left: 0;
-    padding: 10px;
-  }
 }
 
