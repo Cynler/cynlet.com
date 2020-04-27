@@ -4,13 +4,14 @@ title:
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title><% if(title){ %><%= title %> – <% } %>Cynlet's Programming Den</title>
-	<link rel="icon" href="/img/FishLogo.svg" />
-	<link rel="stylesheet" type="text/css" href="/css/reset.css" />
-	<link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <title><% if(title){ %><%= title %> – <% } %>Cynlet's Programming Den</title>
+    <link rel="icon" href="/img/FishLogo.svg" />
+    <link rel="stylesheet" type="text/css" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
 </head>
+
 <body>
 
   <div class="main">
@@ -25,9 +26,16 @@ title:
           <% } %>
       <% }) %>
     </header>
- 
-    <%- content -%>
+
+    <div class="middle"> 
+      <%- content -%>
+    </div>
+
+    <footer class="bottom">
+      <p>@CynthiaLu2020</p>
+    </footer>
   </div>
 
 </body>
+
 </html>

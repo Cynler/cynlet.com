@@ -3,12 +3,14 @@
 ## Currently, only the web version is available, more TODO for mobile.
 
 ### This is a webpage planned to consist of 4 pages, home, work, blog, about.
-- Currently **Home** and **About** is done
+- Currently **Home** and __About__ is done
+  - Mobile page for **Home**
 - The generally banner layout is complete as well.
 - Completed hover text change & underline.  
+ 
 
 ## TODO Shorterm
-- **(!!)About page**
+- __(!!)About page__
   1. ~~Fish facts + Introduciton (Done)~~
   2. links to github/insta/linkdn/resume pdf.
 - **(!)Work page**
