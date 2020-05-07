@@ -1,23 +1,23 @@
 {
   "home": "/",
-  "about": "/About",
-  "blog": "/Blog",
-  "work": "/Work",
+  "about.html": "/About",
+  "blog.html": "/Blog",
+  "work.html": "/Work",
   "navLinks": [
     {
-      "title": "Home",
+      "title": "HOME",
       "slug": "/"
     },
     {
-      "title": "About",
+      "title": "ABOUT",
       "slug": "/about.html"
     },
     {
-      "title": "Blog",
+      "title": "BLOG",
       "slug": "/blog.html"
     },
     {
-      "title": "Work",
+      "title": "WORK",
       "slug": "/work.html"
     }
   ]

@@ -1,0 +1,10 @@
+<header class="top">
+  <img src="/img/FishLogo.svg" alt="CynLu Logo"></img>
+  {% for item in links.navLinks%}
+    {% if (item.slug == page.url) %}
+      <a class="site-nav active" href="{{ item.slug }}">{{ item.title }}</a>
+    {% else %}
+      <a class="site-nav" href="{{ item.slug }}">{{ item.title }}</a> 
+    {% endif %}
+  {% endfor %}
+</header>
