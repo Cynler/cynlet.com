@@ -16,6 +16,7 @@
 - **(!)Work page**
   1. _Card view_ for all of my vector/poster work. (or listview)
   2. upload all my artwork (Test)
+  **Componentize existing About Page**
 ## TODO Longterm
 - **(!)Blog page**
   1. Page generater for markdown files in post folder (TBD)

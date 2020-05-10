@@ -1,0 +1,19 @@
+{% 
+  macro card(
+    url, 
+    image_url, 
+    image_alt, 
+    name, 
+    date) 
+%}
+
+<div class="work">
+  <a href="{{ url }}" class="image-wrapper">
+    <img src="{{ image_url }}" alt="{{ image_alt }}">
+  </a>
+  <a href="{{ url }}">
+    <h2>{{ name }}</h2>
+  </a>
+  <p>{{ date }}</p>
+</div>
+{% endmacro %}
